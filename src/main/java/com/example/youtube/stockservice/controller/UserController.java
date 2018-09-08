@@ -54,6 +54,10 @@ public class UserController {
 
     @GetMapping(value = "/deneme")
     public ResponseEntity deneme(){
-        return ResponseEntity.ok("hello");
+        User user = new User();
+        user.setUserId(1);
+        user.setName("Bilal");
+        user.setPassword("Muzo");
+        return ResponseEntity.ok(user);
 }
 }
