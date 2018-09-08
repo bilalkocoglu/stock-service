@@ -58,6 +58,6 @@ public class UserController {
         user.setUserId(1);
         user.setName("Bilal");
         user.setPassword("Muzo");
-        return ResponseEntity.ok(user);
+        return ResponseEntity.notFound().build();
 }
 }
