@@ -22,7 +22,6 @@ public class UserController {
     static final String ENDPOINT = "/user";
 
     private UserSearchService userSearchService;
-    private static final Logger log = (Logger) LogManager.getLogger(UserController.class);
 
     public UserController(UserSearchService userSearchService) {
         this.userSearchService = userSearchService;

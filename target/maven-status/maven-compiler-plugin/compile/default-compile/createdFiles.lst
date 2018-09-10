@@ -23,6 +23,7 @@ com\example\youtube\stockservice\assembler\UserResourceAssembler.class
 com\example\youtube\stockservice\util\SchoolUtil.class
 com\example\youtube\stockservice\controller\UserController.class
 com\example\youtube\stockservice\dto\ExampleDto.class
+com\example\youtube\stockservice\controller\ThyController.class
 com\example\youtube\stockservice\util\CustomerUtil.class
 com\example\youtube\stockservice\assembler\CustomersResourceAssembler.class
 com\example\youtube\stockservice\exception\NotFountException.class
