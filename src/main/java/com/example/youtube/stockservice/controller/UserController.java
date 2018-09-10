@@ -7,10 +7,13 @@ import com.example.youtube.stockservice.dto.UserResponseDto;
 import com.example.youtube.stockservice.model.User;
 import com.example.youtube.stockservice.service.UserSearchService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.logging.log4j.LogManager;
 import org.springframework.hateoas.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.logging.Logger;
 
 @Slf4j
 @RestController
@@ -19,6 +22,7 @@ public class UserController {
     static final String ENDPOINT = "/user";
 
     private UserSearchService userSearchService;
+    private static final Logger log = (Logger) LogManager.getLogger(UserController.class);
 
     public UserController(UserSearchService userSearchService) {
         this.userSearchService = userSearchService;
